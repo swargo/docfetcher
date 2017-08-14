@@ -11,6 +11,7 @@
 
 package net.sourceforge.docfetcher.gui.preview;
 
+import java.io.Console;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -296,7 +297,7 @@ class HighlightingToolBarWithTextViewer {
 		
 		textViewer.getControl().setRedraw(false);
 		textViewer.setText(string);
-		
+				
 		updatePageToolbar(false);
 		occField.setRange(currentOcc, occCount);
 		upBt.setEnabled(occCount > 0);
